@@ -8,4 +8,4 @@ O que devo fazer?
 3 - Instalar as dependências (npm install);
 4 - Executar o aplicativo (no Linux = DEBUG=express-locallibrary-tutorial:* npm start - no Windows = SET DEBUG=express-locallibrary-tutorial:* & npm start);
 5 - Acessar o endereço: http://localhost:3000/ e verificar a execução do sistema;
-https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website/expressgeneratorskeletonwebsite.png
+![Execução do sistema Olá Mundo!](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website/expressgeneratorskeletonwebsite.png)
