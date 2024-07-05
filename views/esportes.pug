@@ -1,0 +1,47 @@
+extends layout
+
+block content
+  h1= title
+  p Bem-vindo ao #{title}, onde você encontra informações sobre diversos esportes.
+
+  // Conteúdo sobre esportes
+  .esporte
+    h2 Futebol
+    img(src="/images/futebol.jpg", alt="Futebol")
+    p O futebol é um esporte coletivo jogado entre duas equipes de onze jogadores cada. É amplamente praticado e assistido em todo o mundo.
+
+  .esporte
+    h2 Basquete
+    img(src="/images/basquete.jpg", alt="Basquete")
+    p O basquete é um esporte de equipe que envolve dois times de cinco jogadores cada. É caracterizado por arremessar uma bola através de uma cesta elevada.
+
+  .esporte
+    h2 Tênis
+    img(src="/images/tenis.jpg", alt="Tênis")
+    p O tênis é um esporte praticado individualmente ou em duplas, que envolve rebater uma bola com uma raquete sobre uma rede no centro da quadra.
+
+  // Estilos CSS inline para exemplo
+  style.
+    h1 {
+      color: #333;
+    }
+    .esporte {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #666;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }

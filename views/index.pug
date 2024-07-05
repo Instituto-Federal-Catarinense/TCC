@@ -2,4 +2,38 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Bem-vindo ao #{title}, onde você encontra informações sobre filmes.
+
+  // Conteúdo sobre filmes
+  .filme
+    h2 Interstellar
+    p Um grupo de exploradores faz uso de um buraco de minhoca recém-descoberto para superar as limitações das viagens espaciais humanas e conquistar as vastas distâncias envolvidas em uma viagem interestelar.
+
+  .filme
+    h2 O Poderoso Chefão
+    p A saga de uma família de mafiosos italianos estabelecidos nos Estados Unidos após a Segunda Guerra Mundial, liderada pelo poderoso Don Vito Corleone.
+
+  .filme
+    h2 Matrix
+    p Em um futuro próximo, um hacker misterioso é recrutado por um grupo subversivo para lutar contra uma realidade simulada que controla a humanidade.
+
+  // Estilos CSS inline para exemplo
+  style.
+    h1 {
+      color: #333;
+    }
+    .filme {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #666;
+    }
