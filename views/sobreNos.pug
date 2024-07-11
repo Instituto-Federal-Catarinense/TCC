@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  h1= title
+  p #{title}
+
+  .sobre
+    h2 Quem Somos
+    p Somos uma equipe apaixonada por esportes e fascinada por curiosidades esportivas. Nosso objetivo é compartilhar histórias únicas e detalhes fascinantes sobre diversos esportes ao redor do mundo.
+
+  .sobre
+    h2 Nosso Compromisso
+    p Estamos comprometidos em oferecer conteúdos precisos, interessantes e divertidos para entusiastas de esportes de todas as idades. Valorizamos a autenticidade e a qualidade das informações que compartilhamos.
+
+  .sobre
+    h2 Nossos Serviços
+    p Oferecemos uma variedade de serviços, incluindo:
+    ul
+      li Palestras e workshops sobre curiosidades esportivas
+      li Publicação de artigos e conteúdos online
+      li Consultoria para projetos relacionados a esportes e entretenimento
+
+  style.
+    h1 {
+      color: #333;
+    }
+    .sobre {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #666;
+    }
+    ul {
+      margin-top: 10px;
+      color: #666;
+    }
+    ul li {
+      margin-bottom: 5px;
+    }

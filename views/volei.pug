@@ -1,0 +1,37 @@
+extends layout
+
+block content
+  h1= title
+  p Aqui você encontrará informações sobre a #{title}.
+
+  .historia
+    h2 Origens do Vôlei
+    p O vôlei foi criado em 1895 nos Estados Unidos por William G. Morgan, como uma alternativa menos violenta ao basquete, mas com o mesmo objetivo de proporcionar atividade física e diversão.
+
+  .historia
+    h2 Expansão e Popularidade
+    p O vôlei ganhou popularidade rapidamente em todo o mundo, especialmente após ser incluído nos Jogos Olímpicos de Verão em 1964. O esporte é conhecido pela sua dinâmica rápida e emocionante.
+
+  .historia
+    h2 Ligas Profissionais e Torneios Internacionais
+    p O vôlei possui ligas profissionais em diversos países e competições internacionais de alto nível, como o Campeonato Mundial e a Liga das Nações de Vôlei.
+
+  style.
+    h1 {
+      color: #333;
+    }
+    .historia {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      color: #666;
+    }

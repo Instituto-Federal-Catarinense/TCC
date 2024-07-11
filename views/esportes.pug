@@ -2,46 +2,37 @@ extends layout
 
 block content
   h1= title
-  p Bem-vindo ao #{title}, onde você encontra informações sobre diversos esportes.
+  p Bem-vindo ao nosso site sobre esportes!
 
-  // Conteúdo sobre esportes
-  .esporte
-    h2 Futebol
-    img(src="/images/futebol.jpg", alt="Futebol")
-    p O futebol é um esporte coletivo jogado entre duas equipes de onze jogadores cada. É amplamente praticado e assistido em todo o mundo.
+  .historia-esportes
+    h2 História dos Esportes
+    p Os esportes têm uma longa história que remonta aos tempos antigos, quando eram praticados como forma de competição e entretenimento.
 
-  .esporte
-    h2 Basquete
-    img(src="/images/basquete.jpg", alt="Basquete")
-    p O basquete é um esporte de equipe que envolve dois times de cinco jogadores cada. É caracterizado por arremessar uma bola através de uma cesta elevada.
+  .importancia-esportes
+    h2 Importância dos Esportes
+    p A prática esportiva não apenas promove a saúde física, mas também ensina valores como trabalho em equipe, disciplina e resiliência.
 
-  .esporte
-    h2 Tênis
-    img(src="/images/tenis.jpg", alt="Tênis")
-    p O tênis é um esporte praticado individualmente ou em duplas, que envolve rebater uma bola com uma raquete sobre uma rede no centro da quadra.
+  .beneficios-saude
+    h2 Benefícios para a Saúde
+    p Praticar esportes regularmente ajuda a melhorar a condição física, reduzir o estresse, aumentar a autoestima e promover um estilo de vida saudável.
 
-  // Estilos CSS inline para exemplo
-  style.
-    h1 {
-      color: #333;
-    }
-    .esporte {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 20px;
-      margin-bottom: 20px;
-      text-align: left;
-    }
-    h2 {
-      color: #333;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 16px;
-      color: #666;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
+
+    style.
+      h1 {
+        color: #333;
+      }
+      .historia-esportes, .importancia-esportes, .beneficios-saude, .contato {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      h2 {
+        color: #333;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 16px;
+        color: #666;
+      }
