@@ -2,27 +2,25 @@ extends layout
 
 block content
   h1= title
-  p Bem-vindo ao #{title}, onde você encontra informações sobre filmes.
+  p A sua melhor página web sobre esportes.
 
-  // Conteúdo sobre filmes
-  .filme
-    h2 Interstellar
-    p Um grupo de exploradores faz uso de um buraco de minhoca recém-descoberto para superar as limitações das viagens espaciais humanas e conquistar as vastas distâncias envolvidas em uma viagem interestelar.
+  button 
+    a(href="/esportes") Esportes
 
-  .filme
-    h2 O Poderoso Chefão
-    p A saga de uma família de mafiosos italianos estabelecidos nos Estados Unidos após a Segunda Guerra Mundial, liderada pelo poderoso Don Vito Corleone.
+  .esporte
+    h2 Esporte
+    p O esporte é muito mais do que simplesmente uma atividade física; é uma paixão que transcende culturas, idiomas e fronteiras. Desde os tempos antigos até os dias de hoje, o esporte tem desempenhado um papel fundamental na sociedade, moldando não apenas corpos, mas também mentes e espíritos.
 
-  .filme
-    h2 Matrix
-    p Em um futuro próximo, um hacker misterioso é recrutado por um grupo subversivo para lutar contra uma realidade simulada que controla a humanidade.
+  .esporte
+    h2 Saúde
+    p Praticar esportes não só promove um estilo de vida ativo e saudável, mas também traz uma série de benefícios físicos, mentais e sociais que contribuem para o bem-estar geral.
 
-  // Estilos CSS inline para exemplo
+
   style.
     h1 {
       color: #333;
     }
-    .filme {
+    .esporte {
       background-color: #fff;
       border: 1px solid #ccc;
       padding: 20px;
@@ -36,4 +34,16 @@ block content
     p {
       font-size: 16px;
       color: #666;
+    }
+
+    button {
+      background-color: #bdb8ad;
+      border-radius: 10px;
+      height: 50px;
+      width: 70px;
+    }
+
+    button a {
+      text-decoration: none;
+      color: black;
     }

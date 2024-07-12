@@ -3,20 +3,23 @@ html(lang="pt-br")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="/public/stylesheets/style.css")
+    link(rel="stylesheet", href="/stylesheets/style.css")
     title #{title}
 
 body
     header
-      h1 Bem-vindo ao Site de esportes
+      br
+      h1 HeartEsports
+      br
       nav
         ul
           li
-            a(href="inicio") Início
+            a(href="/") Início
           li
-            a(href="sobreNos") Sobre Nós
+            a(href="/sobreNos") Sobre Nós
           li
-            a(href="contato") Contato
+            a(href="/contato") Contato
+      br
 
     main
       block content
@@ -28,21 +31,26 @@ body
       
       body {
         font-family: Arial, sans-serif;
-        line-height: 1.6;
         margin: 0;
         padding: 0;
-        background-color: #f0f0f0;
+        background-color: #c6d4e1;
         }
 
       header {
-        background-color: #333;
-        color: #fff;
+        background-color: #44749d;
         padding: 10px 20px;
       }
 
       header h1 {
         margin: 0;
         font-size: 2.5rem;
+        color: white;
+        padding: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding: 10px;
+        padding-right: 160px;
       } 
 
       nav ul {
@@ -53,7 +61,7 @@ body
 
       nav ul li {
         display: inline;
-        margin-right: 20px;
+        margin-right: 40px;
       }
 
       nav ul li a {
@@ -71,11 +79,14 @@ body
       }
 
       footer {
-        background-color: #333;
-        color: #fff;
+        background-color: #44749d;
         text-align: center;
         padding: 10px 0;
         position: fixed;
         bottom: 0;
         width: 100%;
+      }
+
+      footer p {
+        color: white;
       }
