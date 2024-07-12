@@ -21,6 +21,15 @@ body
             a(href="/contato") Contato
       br
 
+    button 
+      a(href="/esportes") Esportes
+
+    button 
+      a(href="/olimpiadas") Olimpíadas
+
+    button 
+      a(href="/historia") História
+
     main
       block content
 
@@ -37,7 +46,7 @@ body
         }
 
       header {
-        background-color: #44749d;
+        background-color: black;
         padding: 10px 20px;
       }
 
@@ -71,7 +80,7 @@ body
       }
 
       nav ul li a:hover {
-        text-decoration: underline;
+        color: #74b9ff;
       }
 
       main {
@@ -79,7 +88,7 @@ body
       }
 
       footer {
-        background-color: #44749d;
+        background-color: black;
         text-align: center;
         padding: 10px 0;
         position: fixed;
@@ -89,4 +98,24 @@ body
 
       footer p {
         color: white;
+      }
+
+      button {
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        margin: 12px;
+        padding: 15px;
+      }
+
+      button:hover {
+        background-color: #74b9ff;
+        transition: 0.5s;
+        box-shadow: 2px 2px 2px;
+      }
+
+      button a {
+        text-decoration: none;
+        color: black;
+        padding: 10px; 
       }
