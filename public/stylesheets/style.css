@@ -1,0 +1,23 @@
+
+
+body {
+    background-image: linear-gradient(black, grey);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.titulo {
+    color: white;
+    margin: 40px;
+    text-align: center;
+}
+
+.caixa {
+    color: white;
+    margin: 20px;
+}
