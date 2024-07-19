@@ -14,3 +14,14 @@ body {
     color: white;
     margin: 20px;
 }
+
+footer {
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+footer img {
+    height: 12vh;
+    margin: 10px;
+}
