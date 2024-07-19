@@ -23,8 +23,8 @@ router.get('/funk', function(req, res, next) {
     res.render('funk');
 });
 
-router.get('/reagge', function(req, res, next) {
-    res.render('reagge');
+router.get('/reggae', function(req, res, next) {
+    res.render('reggae');
 });
 
 module.exports = router;

@@ -4,6 +4,19 @@ body {
     background-image: linear-gradient(black, grey);
 }
 
+.navegacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.144);
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: white;
+}
+
 .titulo {
     color: white;
     margin: 40px;
