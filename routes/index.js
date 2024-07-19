@@ -4,7 +4,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index',{ title: 'Bem-Vindo' });
+  res.render('index',{ title: 'Página Inicial' });
 });
 
 router.get('/sobreNos', function(req, res, next) {

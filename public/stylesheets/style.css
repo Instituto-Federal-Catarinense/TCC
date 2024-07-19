@@ -4,13 +4,6 @@ body {
     background-image: linear-gradient(black, grey);
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-}
-
 .titulo {
     color: white;
     margin: 40px;

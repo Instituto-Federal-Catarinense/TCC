@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 
 router.get('/musica', function(req, res, next) {
-    res.render('musica');
+    res.render('musica', { title: 'Musica'} );
 });
 
 router.get('/rock', function(req, res, next) {
@@ -26,3 +26,5 @@ router.get('/funk', function(req, res, next) {
 router.get('/reagge', function(req, res, next) {
     res.render('reagge');
 });
+
+module.exports = router;
