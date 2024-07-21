@@ -46,3 +46,7 @@ Existem várias view engines populares para Node.js e outras plataformas web, ca
 Conclusão
 
 Em resumo, uma view engine é uma parte essencial da arquitetura de muitas aplicações web modernas, pois permite a criação dinâmica de conteúdo HTML a partir de templates e dados, facilitando o desenvolvimento de interfaces de usuário interativas e adaptáveis. Ela desempenha um papel fundamental na separação de preocupações (Separation of Concerns) e na criação de experiências de usuário ricas e responsivas.
+
+# Códigos salvos
+
+background-image: linear-gradient(rgb(29, 29, 29), rgb(59, 57, 57), grey);

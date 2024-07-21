@@ -1,20 +1,7 @@
 
 
 body {
-    background-image: linear-gradient(black, grey);
-}
-
-.navegacao {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px;
-    background-color: rgba(0, 0, 0, 0.144);
-}
-
-.navegacao a {
-    text-decoration: none;
-    color: white;
+    background-image: linear-gradient(rgb(29, 29, 29), rgb(59, 57, 57), grey);
 }
 
 .titulo {
@@ -29,12 +16,16 @@ body {
 }
 
 footer {
-    padding: 30px;
     display: flex;
     justify-content: end;
+    background-color: black;
+}
+
+.foot {
+    margin-right: 10vw;
 }
 
 footer img {
-    height: 12vh;
-    margin: 10px;
+    height: 8vh;
+    margin: 20px;
 }
