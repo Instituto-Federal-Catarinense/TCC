@@ -4,6 +4,11 @@ body {
     background-image: linear-gradient(rgb(29, 29, 29), rgb(59, 57, 57), grey);
 }
 
+main {
+    background-image: url('https://www.10wallpaper.com/wallpaper/1366x768/1508/sunset_from_ice_mountain-Landscape_wallpaper_1366x768.jpg');
+    background-size: cover;
+}
+
 .titulo {
     color: white;
     margin: 40px;
@@ -28,4 +33,8 @@ footer {
 footer img {
     height: 8vh;
     margin: 20px;
+}
+
+a {
+    
 }
