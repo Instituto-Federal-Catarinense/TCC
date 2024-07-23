@@ -1,12 +1,108 @@
 
 
 body {
-    background-image: linear-gradient(rgb(29, 29, 29), rgb(59, 57, 57), grey);
+    background-image: linear-gradient(black, rgb(34, 34, 34));
 }
 
 main {
+    position: relative;
+}
+
+#rock{
+    position: relative;
+}
+#rock::before{
+    content: '';
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://wallpapers.com/images/hd/rock-n-roll-pp3rhnw1ok0v6g9y.jpg');
+    background-size: cover;
+    opacity: 0.2; /* Opacidade da imagem de fundo */
+    z-index: -1; 
+}
+
+#jazz{
+    position: relative;
+}
+
+#jazz::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://culturanf.com.br/wp-content/uploads/2023/12/fotografia-clube-jazz-fumaca-saxofonista-publico.webp');
+    background-size: cover;
+    opacity: 0.2; /* Opacidade da imagem de fundo */
+    z-index: -1; 
+}
+
+#funk{
+    position: relative;
+}
+
+#funk::before{
+    content: '';
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://controle.diariodorio.com/wp-content/uploads/2021/03/a6d47dd8a8620a2af48f9f7399360978.jpg');
+    background-size: cover;
+    opacity: 0.2; /* Opacidade da imagem de fundo */
+    z-index: -1; 
+}
+
+#pop{
+    position: relative;
+}
+
+#pop::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.ytimg.com/vi/0CWUFzbXVJg/maxresdefault.jpg');
+    background-size: cover;
+    opacity: 0.2; /* Opacidade da imagem de fundo */
+    z-index: -1; 
+}
+
+#reggae{
+    position: relative;
+}
+
+#reggae::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyFeVULX_mHBDkiJGKBqBPpNl44uwwdza5Tg&s');
+    background-size: cover;
+    opacity: 0.2; /* Opacidade da imagem de fundo */
+    z-index: -1; 
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('https://www.10wallpaper.com/wallpaper/1366x768/1508/sunset_from_ice_mountain-Landscape_wallpaper_1366x768.jpg');
     background-size: cover;
+    opacity: 0.2; /* Opacidade da imagem de fundo */
+    z-index: -1; 
 }
 
 .titulo {
@@ -33,8 +129,4 @@ footer {
 footer img {
     height: 8vh;
     margin: 20px;
-}
-
-a {
-    
 }
