@@ -12,8 +12,4 @@ router.get('/sobreNos', function(req, res, next) {
   res.render('sobreNos', { title: 'Sobre Nós' });
 });
 
-router.get('/contato', function(req, res, next) {
-  res.render('contato', { title: 'Contato' });
-});
-
 module.exports = router;
