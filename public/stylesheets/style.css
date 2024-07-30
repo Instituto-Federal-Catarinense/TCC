@@ -25,12 +25,17 @@ ul {
     align-items: center;
 }
 
-a {
+.cabeca {
     text-decoration: none;
     color: white;
     margin: 10px;
     font-size: 19px;
     font-family: "Bebas Neue";
+}
+
+a:hover {
+    color: #43aaff;
+    transition: 0.4s;
 }
 
 
@@ -39,17 +44,21 @@ a {
     height: auto;
 }
 
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .barra {
-    margin-top: 250px;
-    margin-bottom: 230px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width: 60vw;
     background-color: #000d854f;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     transition: background-color 1s ease;
+    padding: 13px;
 }
 
 .barra:hover {
@@ -57,17 +66,22 @@ a {
 }
 
 .icons{
-    display: flex;
-    align-items: center;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.comp {
+    text-decoration: none;
+    color: white;
 }
 
 .component {
     width: 50px;
+    height: 50px;
     border-radius: 100px;
     outline: 2px solid transparent; 
     transition: outline-color 0.2s ease;
+    box-sizing: border-box;
 }
 
 .component:hover {
@@ -80,6 +94,9 @@ footer {
     display: flex;
     justify-content: end;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 .foot {
