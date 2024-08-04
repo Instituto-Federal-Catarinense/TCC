@@ -34,7 +34,7 @@ ul {
 }
 
 a:hover {
-    color: #43aaff;
+    color: rgb(69, 253, 253);
     transition: 0.4s;
 }
 
@@ -49,6 +49,14 @@ main {
     justify-content: center;
 }
 
+.titulo {
+    margin-top: 125px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #000d85;
+}
+
 .barra {
     margin-top: 150px;
     margin-bottom: 150px;
@@ -58,7 +66,7 @@ main {
     display: flex;
     justify-content: center;
     transition: background-color 1s ease;
-    padding: 13px;
+    padding: 15px;
 }
 
 .barra:hover {
@@ -75,6 +83,10 @@ main {
     color: white;
 }
 
+.comp p {
+    text-align: center;
+}
+
 .component {
     width: 50px;
     height: 50px;
@@ -88,6 +100,7 @@ main {
     outline: 2px solid rgb(160, 255, 255);
     padding: 2px;
 }
+
 
 footer {
     background-color: rgba(0, 0, 0, 0.596);
@@ -106,4 +119,6 @@ footer {
 #redes {
     width: 50px;
     height: auto;
+    margin-left: 20px;
 }
+

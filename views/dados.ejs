@@ -1,0 +1,12 @@
+<%- include ('./header/cabecalho')%>
+
+    <main>
+        <h1>Lista de Usuários</h1>
+        <ul>
+            <% usuarios.forEach(usuarios => { %>
+                <li><%= usuarios.nome %> - <%= usuarios.email %></li>
+            <% }); %>
+        </ul>
+    </main>
+
+<%- include ('./footer/rodape')%>
