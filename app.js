@@ -3,24 +3,9 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 
-const mysql = require('mysql2');
-
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
 var app = express();
-
-const conexao = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '12344321',
-  database: 'beatsync' 
-});
-
-conexao.connect(function(err){
-  if(err)throw err;
-  console.log('conexao estabelecida')
-});
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -32,7 +17,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 
 app.use(function(req, res, next) {
