@@ -1,9 +1,9 @@
 const db = require('../config/db');
 
-const Usuarios = {
-    create: (usuario, callback) => {
+const Usuarioss = {
+    create: (usuarioss, callback) => {
         const query = 'INSERT INTO usuarios (nome, email, dataNasc, gender, senha) VALUES (?, ?, ?, ?, ?)';
-        db.query(query, [usuario.nome, usuario.email, usuario.dataNasc, usuario.gender, usuario.senha], (err, results) => {
+        db.query(query, [usuarios.nome, usuarios.email, usuarios.dataNasc, usuarios.gender, usuarios.senha], (err, results) => {
             if (err) {
                 return callback(err);
             }
@@ -31,9 +31,9 @@ const Usuarios = {
         });
     },
 
-    update: (id, usuario, callback) => {
+    update: (id, usuarios, callback) => {
         const query = 'UPDATE usuarios SET nome = ?, email = ?, dataNasc = ?, gender = ?, senha = ? WHERE id = ?';
-        db.query(query, [usuario.nome, usuario.email, usuario.dataNasc, usuario.gender, usuario.senha, id], (err, results) => {
+        db.query(query, [usuarios.nome, usuarios.email, usuarios.dataNasc, usuarios.gender, usuarios.senha, id], (err, results) => {
             if (err) {
                 return callback(err);
             }
@@ -42,7 +42,7 @@ const Usuarios = {
     },
 
     delete: (id, callback) => {
-        const query = 'DELETE FROM usuarios WHERE id = ?';
+        const query = 'DELETE FROM usuarioss WHERE id = ?';
         db.query(query, [id], (err, results) => {
             if (err) {
                 return callback(err);
@@ -62,4 +62,4 @@ const Usuarios = {
     },
 };
 
-module.exports = Usuarios;
+module.exports = Usuarioss;

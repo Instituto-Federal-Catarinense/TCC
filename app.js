@@ -3,8 +3,8 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 
-const indexRouter = require('./routes/index');
-const usuariosRouter = require('./routes/usuarios');
+const indexRouter = require('./routes/indexRouter');
+const usuariosRouter = require('./routes/usuariosRouter');
 
 const app = express();
 
@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/', usuariosRouterRouter);
+app.use('/cadastro', usuariosRouter);
 
 
 app.use(function(req, res, next) {
