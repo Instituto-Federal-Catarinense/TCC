@@ -1,17 +1,20 @@
-create database bancoTeste;
+CREATE DATABASE BeatSync;
 
-use bancoTeste;
+USE BeatSync;
 
-create table usuarios (
-	id int auto_increment primary key,
-	nome varchar(35) not null,
-    dataNasc date,
-    email varchar(50) not null,
-    senha varchar(20) not null
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(35) NOT NULL,
+    email VARCHAR(35) NOT NULL,
+    dataNasc DATE,
+    gender VARCHAR(35) NOT NULL,
+    senha VARCHAR(20) NOT NULL
 );
 
-INSERT INTO usuarios (nome, dataNasc, email, senha)
-VALUES ('Fulano de Tal', '1990-05-15', 'fulano@email.com', 'senha123');
-
-
-SELECT * FROM bancoTeste.usuarios;
+CREATE TABLE music (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(200) NOT NULL,
+    artista VARCHAR(200) NOT NULL,
+    genderM VARCHAR(200) NOT NULL,
+    album VARCHAR(200) NOT NULL
+);
