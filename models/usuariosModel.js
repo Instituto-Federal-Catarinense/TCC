@@ -1,7 +1,7 @@
 const db = require('../config/db');
 
-const Usuarioss = {
-    create: (usuarioss, callback) => {
+const Usuarios = {
+    create: (usuarios, callback) => {
         const query = 'INSERT INTO usuarios (nome, email, dataNasc, gender, senha) VALUES (?, ?, ?, ?, ?)';
         db.query(query, [usuarios.nome, usuarios.email, usuarios.dataNasc, usuarios.gender, usuarios.senha], (err, results) => {
             if (err) {
@@ -42,7 +42,7 @@ const Usuarioss = {
     },
 
     delete: (id, callback) => {
-        const query = 'DELETE FROM usuarioss WHERE id = ?';
+        const query = 'DELETE FROM usuarios WHERE id = ?';
         db.query(query, [id], (err, results) => {
             if (err) {
                 return callback(err);
@@ -62,4 +62,4 @@ const Usuarioss = {
     },
 };
 
-module.exports = Usuarioss;
+module.exports = Usuarios;

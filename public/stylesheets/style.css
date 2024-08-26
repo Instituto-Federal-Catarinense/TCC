@@ -58,8 +58,8 @@ main {
 }
 
 .barra {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
     width: 60vw;
     background-color: #000d854f;
     border-radius: 50px;

@@ -2,13 +2,13 @@ const Usuarios = require('../models/usuariosModel');
 
 const usuariosController = {
     createUsuarios: (req, res) => {
-        const newUsuarios = {
-            nome: req.body.nome,
-            email: req.body.email,
-            dataNasc: req.body.dataNasc,
-            gender: req.body.gender,
-            senha: req.body.senha,
-        };
+        const { nome, email, dataNasc, gender, senha, csenha } = req.body;
+
+        if (senha !== csenha) {
+            return res.status(400).render('usuarios/create', { error: 'Senhas não coincidem' });
+        }
+
+        const newUsuarios = { nome, email, dataNasc, gender, senha };
 
         Usuarios.create(newUsuarios, (err, usuariosId) => {
             if (err) {
@@ -42,7 +42,7 @@ const usuariosController = {
     },
 
     renderCreateForm: (req, res) => {
-        res.render('usuarios/create');
+        res.render('usuarios/create', { error: null });
     },
 
     renderEditForm: (req, res) => {

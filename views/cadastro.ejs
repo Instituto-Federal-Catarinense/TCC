@@ -1,0 +1,45 @@
+<%- include ('./header/cabecalho')%>
+
+<div id="form">
+    <form action="/usuarios" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+        <div>
+            <label for="dataNasc">Data de Nascimento:</label>
+            <input type="date" id="dataNasc" name="dataNasc" required>
+        </div>
+        <div>
+            <label>Gênero:</label>
+            <label for="gender-masculino">Masculino</label>
+            <input type="radio" id="gender-masculino" name="gender" value="Masculino" required>
+
+            <label for="gender-feminino">Feminino</label>
+            <input type="radio" id="gender-feminino" name="gender" value="Feminino" required>
+
+            <label for="gender-outro">Outro</label>
+            <input type="radio" id="gender-outro" name="gender" value="Outro" required>
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        <div>
+            <label for="csenha">Confirme a Senha:</label>
+            <input type="password" id="csenha" name="csenha" placeholder="Confirme sua senha" required>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+        <% if (error) { %>
+            <div class="error"><%= error %></div>
+        <% } %>
+    </form>
+</div>
+
+<%- include ('./footer/rodape')%>
