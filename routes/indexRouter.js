@@ -14,7 +14,7 @@ router.get('/treinos', function(req, res) {
   res.render('treinos', {title: 'Treino'});
 });
 
-router.get('/pefil', function(req, res) {
+router.get('/perfil', function(req, res) {
   res.render('perfil', {title: 'Perfil'});
 });
 
@@ -25,4 +25,5 @@ router.get('/cadastro', function(req, res) {
 router.get('/playlist', function(req, res){
   res.render('playlist', {title: 'playlist'});
 });
+
 module.exports = router;
