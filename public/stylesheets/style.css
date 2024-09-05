@@ -123,15 +123,24 @@ footer {
 }
 
 #sobreNos {
-    background-color: #000d85; /* fundo semitransparente */
+    background-color: #000d8569; /* fundo semitransparente */
     padding: 50px;
     font-size: 18px; /* ajuste conforme necessário */
     text-align: center;
     border-radius: 10px;
+<<<<<<< HEAD
     margin-top: 20vh;
+=======
+    margin-top: 30vh;
+>>>>>>> 2e60fc1695814098f55975b5d6ca355328143c40
     margin-bottom: 10vh;
     box-shadow: -8px 8px 4px #000d8583;
     color: white;
+    transition: background-color 1s ease;
+}
+
+#sobreNos:hover {
+    background-color: #000d85;
 }
 
 #form {
