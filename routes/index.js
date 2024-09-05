@@ -14,15 +14,12 @@ router.get('/cadastro', function(requ, res, next){
   res.render('cadastro', { title: 'Cadastro' });
 });
 
-router.get('/cadastro', function(req, res, next) {
-  res.render('cadastro', {title: 'Cadastro'});
-});
-
 router.get('/perfil', function(req, res, next) {
   res.render('perfil', {title: 'Perfil'});
 });
 
-router.get('/treino', function(req, res, next) {
-  res.render('treino', {title: 'Treino'});
+router.get('/treinos', function(req, res, next) {
+  res.render('treinos ', {title: 'Treino'});
 });
+
 module.exports = router;

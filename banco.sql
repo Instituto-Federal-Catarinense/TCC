@@ -1,6 +1,6 @@
-create database bancoTeste;
+create database beatsync;
 
-use bancoTeste;
+use beatsync;
 
 create table usuarios (
 	id int auto_increment primary key,
@@ -10,8 +10,5 @@ create table usuarios (
     senha varchar(20) not null
 );
 
-INSERT INTO usuarios (nome, dataNasc, email, senha)
-VALUES ('Fulano de Tal', '1990-05-15', 'fulano@email.com', 'senha123');
 
-
-SELECT * FROM bancoTeste.usuarios;
+SELECT * FROM beatsync.usuarios;

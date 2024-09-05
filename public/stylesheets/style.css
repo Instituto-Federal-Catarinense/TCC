@@ -58,8 +58,8 @@ main {
 }
 
 .barra {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 30vh;
+    margin-bottom: 10vh;
     width: 60vw;
     background-color: #000d854f;
     border-radius: 50px;
@@ -128,22 +128,26 @@ footer {
     font-size: 18px; /* ajuste conforme necessário */
     text-align: center;
     border-radius: 10px;
-    margin-top: 100px;
-    margin-bottom: 150px;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
     box-shadow: -8px 8px 4px #000d8583;
     color: white;
 }
 
 #form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 150px;
+    margin-top: 10vh;
     background-color: #000d85;
-}
+    width: 20vw;
+    display: flex;
+    color: white;
+    justify-items: center;
+}   
 
 #form form {
     padding: 30px;
+}
 
+#form-2 {
+    display: flex;
+    justify-content: center;
 }
